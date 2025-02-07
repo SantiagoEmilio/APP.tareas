@@ -4,7 +4,7 @@ export function tarea() {
   contenedor.className = "contenedor";
   
   const titulo = document.createElement("h2");
-  titulo.textContent = "tareas";
+  titulo.textContent = "";
   contenedor.appendChild(titulo);
   
   const lista = document.createElement("div");
