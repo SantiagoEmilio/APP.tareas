@@ -5,7 +5,7 @@ export function tarea() {
   contenedor.className = "contenedor";
   
   const titulo = document.createElement("h2");
-  titulo.textContent = "Mis Tareas"; // Puedes agregar un título si lo deseas
+  titulo.textContent = "Mis Tareas"; 
   contenedor.appendChild(titulo);
   
   const lista = document.createElement("div");
@@ -22,17 +22,12 @@ export function tarea() {
     const checkbox = Item.querySelector(".task-checkbox");
     const taskText = Item.querySelector(".task-text");
 
-    // Agregar el evento click al contenedor completo del item
     Item.addEventListener("click", (e) => {
-      // Verificar si el click fue sobre el checkbox
       if (e.target === checkbox) {
-        // Si el click fue sobre el checkbox, evitar cambiar el estado de la tarea
         return;
       }
 
-      // Si el click no fue sobre el checkbox, cambiar su estado
       checkbox.checked = !checkbox.checked;
-      // Aplicar o quitar el tachado basado en el estado del checkbox
       if (checkbox.checked) {
         taskText.style.textDecoration = "line-through";
       } else {
