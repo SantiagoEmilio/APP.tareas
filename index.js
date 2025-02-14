@@ -4,6 +4,7 @@ import { tarea } from "./componentes/tarea/tarea.js";
 
 let DOM = document.getElementById('root');
 DOM.appendChild(header());
-DOM.appendChild(formulario());
 DOM.appendChild(tarea());
+DOM.appendChild(formulario());
+
 
