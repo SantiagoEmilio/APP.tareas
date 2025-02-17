@@ -8,7 +8,7 @@ function header() {
     header.appendChild(logo);
 
     let h1 = document.createElement('h1');
-    h1.innerText = "pokis";
+    h1.innerText = "selp";
     header.appendChild(h1);
 
     return header;
