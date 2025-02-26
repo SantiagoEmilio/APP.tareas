@@ -1,10 +1,15 @@
 import { header } from "./componentes/header/header.js";
 import { formulario } from "./componentes/formulario/formulario.js";
-import { tarea } from "./componentes/tarea/tarea.js";
+import { cargarCartas } from "./componentes/tarea/tarea.js";
+import { marcarTarea } from "./componentes/tarea/funcionestareas.js";
 
-let DOM = document.getElementById('root');
-DOM.appendChild(header());
-DOM.appendChild(tarea());
-DOM.appendChild(formulario());
+function cargarDom() {
+  let DOM = document.getElementById('root');
+  DOM.appendChild(header());
+  DOM.appendChild(cargarCartas()); 
+  DOM.appendChild(formulario());
 
+  marcarTarea(); 
+}
 
+cargarDom();
