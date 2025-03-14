@@ -9,3 +9,11 @@ export const tareas = [
     "alumno 8"
 ];  
 
+
+function consultarTareas(){
+    fetch(` http://localhost:3000`)
+    .then(response => response . json())
+    .then(data = crossriginIsolated.log(data))
+    .catch(error => console.error(`Error:`, error));
+}
+export{consultarTareas}
